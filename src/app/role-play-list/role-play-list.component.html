@@ -1,5 +1,3 @@
-
-
 <mat-grid-list cols="3" rowHeight="2:1">
   <mat-grid-tile *ngFor="let personnage of personnages">
     <mat-card>
@@ -11,6 +9,61 @@
       <p>Attaque : {{personnage.attaque}}</p>
       <p>Défense : {{personnage.defense}}</p>
       <p>Armure : {{personnage.armure}}</p>
+      <mat-checkbox>Se préparer pour l'arène</mat-checkbox>
     </mat-card>
   </mat-grid-tile>
 </mat-grid-list>
+
+<mat-card class="container">
+  <mat-form-field>
+    <input matInput placeholder="Prenom" [(ngModel)]="prenom">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput placeholder="Nom" [(ngModel)]="nom">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="number" placeholder="Age" [(ngModel)]="age">
+  </mat-form-field>
+  <mat-form-field>
+    <mat-select placeholder="Genre" [(ngModel)]="selectedGenre">
+      <mat-option *ngFor="let genre of genres" [value]="genre">
+        {{genre}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <h3>Statistiques</h3>
+  <h4>Points de vie</h4>
+  <mat-slider
+    [max]="200"
+    [min]="0"
+    [step]="1"
+    [(ngModel)]="ptsVie">
+  </mat-slider>
+  {{ptsVie}}
+  <h4>Attaque</h4>
+  <mat-slider
+    [max]="200"
+    [min]="0"
+    [step]="1"
+    [(ngModel)]="attaque">
+  </mat-slider>
+  {{attaque}}
+  <h4>Défense</h4>
+  <mat-slider
+    [max]="200"
+    [min]="0"
+    [step]="1"
+    [(ngModel)]="defense">
+  </mat-slider>
+  {{defense}}
+  <h4>Armure</h4>
+  <mat-slider
+    [max]="200"
+    [min]="0"
+    [step]="1"
+    [(ngModel)]="armure">
+  </mat-slider>
+  {{armure}}
+  <button (click)="addPlayer()">Ajouter le joueur</button>
+</mat-card>
+

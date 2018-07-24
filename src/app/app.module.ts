@@ -10,7 +10,16 @@ import { BottomFlagComponent } from './bottom-flag/bottom-flag.component';
 import { CalcImcComponent } from './calc-imc/calc-imc.component';
 import {FormsModule} from '@angular/forms';
 import { RolePlayListComponent } from './role-play-list/role-play-list.component';
-import {MatCardModule, MatGridListModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatCheckboxModule,
+  MatFormFieldModule,
+  MatGridListModule,
+  MatInputModule,
+  MatSelectModule, MatSliderModule
+} from '@angular/material';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -27,7 +36,14 @@ import {MatCardModule, MatGridListModule} from '@angular/material';
     BrowserModule,
     FormsModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    BrowserAnimationsModule,
+    MatSliderModule
   ],
   providers: [],
   bootstrap: [AppComponent]
