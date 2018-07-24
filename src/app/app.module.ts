@@ -7,6 +7,9 @@ import { FlagComponent } from './flag/flag.component';
 import { TopFlagComponent } from './top-flag/top-flag.component';
 import { MiddleFlagComponent } from './middle-flag/middle-flag.component';
 import { BottomFlagComponent } from './bottom-flag/bottom-flag.component';
+import { CalcImcComponent } from './calc-imc/calc-imc.component';
+import {FormsModule} from '@angular/forms';
+import { RolePlayListComponent } from './role-play-list/role-play-list.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +18,13 @@ import { BottomFlagComponent } from './bottom-flag/bottom-flag.component';
     FlagComponent,
     TopFlagComponent,
     MiddleFlagComponent,
-    BottomFlagComponent
+    BottomFlagComponent,
+    CalcImcComponent,
+    RolePlayListComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

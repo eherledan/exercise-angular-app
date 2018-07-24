@@ -1,0 +1,15 @@
+<form novalidate>
+  <div>
+    <label for="taille">Taille</label>
+    <input [(ngModel)]="taille" type="text" name="taille" id="taille">
+  </div>
+  <div>
+    <label for="poids">Poids</label>
+    <input [(ngModel)]="poids" type="text" name="poids" id="poids">
+  </div>
+  <div>
+    <button (click)="calculateIMC()" type="submit">Calculer</button>
+  </div>
+</form>
+
+{{res}}
