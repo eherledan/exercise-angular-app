@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Personnage } from '../personnage';
 
 @Component({
   selector: 'app-calc-imc',

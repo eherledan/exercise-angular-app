@@ -1,0 +1,16 @@
+
+
+<mat-grid-list cols="3" rowHeight="2:1">
+  <mat-grid-tile *ngFor="let personnage of personnages">
+    <mat-card>
+      <p>Prenom : {{personnage.prenom}}</p>
+      <p>Nom : {{personnage.nom}}</p>
+      <p>Age : {{personnage.age}}</p>
+      <p>Genre : {{personnage.genre}}</p>
+      <p>Points de vie : {{personnage.pointsVie}}</p>
+      <p>Attaque : {{personnage.attaque}}</p>
+      <p>Défense : {{personnage.defense}}</p>
+      <p>Armure : {{personnage.armure}}</p>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
