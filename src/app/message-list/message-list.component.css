@@ -1,0 +1,12 @@
+mat-card {
+  margin: 20px 0px;
+}
+
+.expediteur {
+  font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+  color: dimgrey;
+}

@@ -1,0 +1,11 @@
+<mat-card>
+  <form [formGroup]="messageForm" (ngSubmit)="submitForm()">
+    <mat-form-field>
+      <input formControlName="expediteur" matInput placeholder="Expéditeur" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input formControlName="message" matInput placeholder="Message" required>
+    </mat-form-field>
+    <button mat-raised-button color="primary" type="submit">Envoyer</button>
+  </form>
+</mat-card>

@@ -8,7 +8,7 @@ import { TopFlagComponent } from './top-flag/top-flag.component';
 import { MiddleFlagComponent } from './middle-flag/middle-flag.component';
 import { BottomFlagComponent } from './bottom-flag/bottom-flag.component';
 import { CalcImcComponent } from './calc-imc/calc-imc.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RolePlayListComponent } from './role-play-list/role-play-list.component';
 import {
   MatButtonModule,
@@ -26,6 +26,9 @@ import { HomeComponent } from './home/home.component';
 import { AProposComponent } from './apropos/apropos.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { NavComponent } from './nav/nav.component';
+import { ChatComponent } from './chat/chat.component';
+import { MessageListComponent } from './message-list/message-list.component';
+import { MessageFormComponent } from './message-form/message-form.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +44,10 @@ import { NavComponent } from './nav/nav.component';
     HomeComponent,
     AProposComponent,
     NotFoundComponent,
-    NavComponent
+    NavComponent,
+    ChatComponent,
+    MessageListComponent,
+    MessageFormComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +63,8 @@ import { NavComponent } from './nav/nav.component';
     MatSliderModule,
     AppRoutingModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
