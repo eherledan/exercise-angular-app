@@ -15,11 +15,17 @@ import {
   MatCardModule,
   MatCheckboxModule,
   MatFormFieldModule,
-  MatGridListModule,
-  MatInputModule,
+  MatGridListModule, MatIconModule,
+  MatInputModule, MatMenuModule,
   MatSelectModule, MatSliderModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './/app-routing.module';
+import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
+import { AProposComponent } from './apropos/apropos.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { NavComponent } from './nav/nav.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +36,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MiddleFlagComponent,
     BottomFlagComponent,
     CalcImcComponent,
-    RolePlayListComponent
+    RolePlayListComponent,
+    BlogComponent,
+    HomeComponent,
+    AProposComponent,
+    NotFoundComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +54,10 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatInputModule,
     MatSelectModule,
     BrowserAnimationsModule,
-    MatSliderModule
+    MatSliderModule,
+    AppRoutingModule,
+    MatIconModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
