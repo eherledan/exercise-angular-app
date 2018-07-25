@@ -1,0 +1,7 @@
+<mat-card *ngFor="let voiture of voitures">
+  <p class="marque">{{voiture.marque}}</p>
+  <p>{{voiture.nom}}</p>
+  <p>{{voiture.couleur}}</p>
+  <p>{{voiture.vitesse}} km/h</p>
+  <button mat-raised-button color="primary" routerLink="/tableau-bord-voitures/{{voiture.id}}">En savoir plus ...</button>
+</mat-card>

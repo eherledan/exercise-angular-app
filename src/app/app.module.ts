@@ -29,6 +29,9 @@ import { NavComponent } from './nav/nav.component';
 import { ChatComponent } from './chat/chat.component';
 import { MessageListComponent } from './message-list/message-list.component';
 import { MessageFormComponent } from './message-form/message-form.component';
+import { TableauBordVoituresComponent } from './tableau-bord-voitures/tableau-bord-voitures.component';
+import { VoitureListComponent } from './voiture-list/voiture-list.component';
+import { VoitureDescComponent } from './voiture-desc/voiture-desc.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,10 @@ import { MessageFormComponent } from './message-form/message-form.component';
     NavComponent,
     ChatComponent,
     MessageListComponent,
-    MessageFormComponent
+    MessageFormComponent,
+    TableauBordVoituresComponent,
+    VoitureListComponent,
+    VoitureDescComponent
   ],
   imports: [
     BrowserModule,
