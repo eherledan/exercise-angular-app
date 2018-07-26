@@ -1,0 +1,6 @@
+<mat-form-field>
+  <input (change)="getFilm()" placeholder="Nom du film" matInput [(ngModel)]="film">
+</mat-form-field>
+<mat-card *ngFor="let film of res">
+  {{film}}
+</mat-card>

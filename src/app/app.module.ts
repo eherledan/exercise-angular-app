@@ -32,6 +32,8 @@ import { MessageFormComponent } from './message-form/message-form.component';
 import { TableauBordVoituresComponent } from './tableau-bord-voitures/tableau-bord-voitures.component';
 import { VoitureListComponent } from './voiture-list/voiture-list.component';
 import { VoitureDescComponent } from './voiture-desc/voiture-desc.component';
+import {HttpClientModule} from '@angular/common/http';
+import { GetFilmsComponent } from './get-films/get-films.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { VoitureDescComponent } from './voiture-desc/voiture-desc.component';
     MessageFormComponent,
     TableauBordVoituresComponent,
     VoitureListComponent,
-    VoitureDescComponent
+    VoitureDescComponent,
+    GetFilmsComponent
   ],
   imports: [
     BrowserModule,
@@ -70,7 +73,8 @@ import { VoitureDescComponent } from './voiture-desc/voiture-desc.component';
     AppRoutingModule,
     MatIconModule,
     MatMenuModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
