@@ -9,7 +9,7 @@ import {FilmService} from '../film.service';
 })
 export class GetFilmsComponent implements OnInit {
   film: string;
-  res: string[] = [];
+  res: any[] = [];
   constructor(private filmService: FilmService) {
   }
 
@@ -19,8 +19,7 @@ export class GetFilmsComponent implements OnInit {
   getFilm() {
     this.filmService.getFilm(this.film).subscribe(
       data => {
-        const film = JSON.stringify(data, null, 4);
-        this.res.push(film);
+        this.res.push(data);
         this.film = '';
       },
       (err: HttpErrorResponse) => {

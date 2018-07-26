@@ -1,6 +1,20 @@
-<mat-form-field>
-  <input (change)="getFilm()" placeholder="Nom du film" matInput [(ngModel)]="film">
-</mat-form-field>
-<mat-card *ngFor="let film of res">
-  {{film}}
-</mat-card>
+ <mat-form-field>
+    <input (change)="getFilm()" placeholder="Nom du film" matInput [(ngModel)]="film">
+  </mat-form-field>
+  <div class="container">
+    <mat-card *ngFor="let film of res">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>{{film.Title}}</mat-card-title>
+        <mat-card-subtitle>{{film.Released}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="{{film.Poster}}">
+      <mat-card-content>
+        <p>
+          {{film.Plot}}
+        </p>
+      </mat-card-content>
+    </mat-card>
+</div>
+
+
