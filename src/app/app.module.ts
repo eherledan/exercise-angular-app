@@ -16,8 +16,8 @@ import {
   MatCheckboxModule,
   MatFormFieldModule,
   MatGridListModule, MatIconModule,
-  MatInputModule, MatMenuModule,
-  MatSelectModule, MatSliderModule
+  MatInputModule, MatMenuModule, MatProgressSpinnerModule,
+  MatSelectModule, MatSliderModule, MatSnackBarModule
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './/app-routing.module';
@@ -34,6 +34,7 @@ import { VoitureListComponent } from './voiture-list/voiture-list.component';
 import { VoitureDescComponent } from './voiture-desc/voiture-desc.component';
 import {HttpClientModule} from '@angular/common/http';
 import { GetFilmsComponent } from './get-films/get-films.component';
+import { PokemonComponent } from './pokemon/pokemon.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { GetFilmsComponent } from './get-films/get-films.component';
     TableauBordVoituresComponent,
     VoitureListComponent,
     VoitureDescComponent,
-    GetFilmsComponent
+    GetFilmsComponent,
+    PokemonComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +76,9 @@ import { GetFilmsComponent } from './get-films/get-films.component';
     MatIconModule,
     MatMenuModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]

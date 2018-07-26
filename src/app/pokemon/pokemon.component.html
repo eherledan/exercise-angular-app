@@ -1,0 +1,21 @@
+<div class="container">
+  <mat-card *ngFor="let pokemon of res">
+    <mat-card-header>
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{pokemon.sprites.front_default}}">
+    <mat-card-content>
+      <button mat-raised-button color="primary" (click)="capturerPokemon(pokemon)">Capturer le pokemon</button>
+    </mat-card-content>
+  </mat-card>
+  <mat-card *ngFor="let pokemon of pokemonsCaptures">
+    <mat-card-header>
+      <mat-card-title>{{pokemon.name}}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image src="{{pokemon.sprites.front_default}}">
+    <mat-card-content>
+      <button mat-raised-button color="accent">Pokemon capturé</button>
+    </mat-card-content>
+  </mat-card>
+</div>
+
